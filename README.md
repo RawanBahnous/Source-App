@@ -2,8 +2,9 @@
 Angular page responsible for adding new resources, utilizing state management with the NgRX Library, and incorporating other fundamental features.
 
 ## Task Documentation and Presentation
-Task Documentation : https://drive.google.com/drive/folders/1ArNkSzjvUo793ee_14phefMLD5uwjEx7?usp=drive_link
-Task Presentation : https://drive.google.com/drive/folders/1597e4xOSWeLIU5ix4wzTGwbCXTe34C2z?usp=drive_link
+- Task Documentation : https://drive.google.com/drive/folders/1ArNkSzjvUo793ee_14phefMLD5uwjEx7?usp=drive_link
+  
+- Task Presentation : https://drive.google.com/drive/folders/1597e4xOSWeLIU5ix4wzTGwbCXTe34C2z?usp=drive_link
 
 ## Features: 
 
