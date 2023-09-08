@@ -1,0 +1,53 @@
+{
+  "title": "إضافة موارد جديدة",
+  "btnremove": "حذف المورد",
+  "btnsave": "حفظ التغييرات",
+  "btn": "مفعلة",
+  "notbtn": "غير مفعلة ",
+  "sourcecardtitle": "اسم الموارد",
+  "sourceplaceholder": "اكتب اسم الموارد",
+  "sourcevalue": "هيثم محمد",
+
+  "sourcetypetitle": "اختر نوع الموارد",
+  "sourcetypetwo": "حجز مدة (أكثر من يوم)",
+  "sourcetypeone": "حجز خلال يوم",
+
+  "availabletitle": "المورد متاح إلى",
+  "availablemonth": "شهر",
+
+  "Resourcetitle": "وقت المورد",
+  "Resourcetime": "وقت الخدمة",
+  "ResourceConstTime": "الوقت ثابت",
+  "Time" : "٣٠ دقيقة",
+
+  "ResvTitle": "الحجز المتعدد",
+  "ResevOne": "حجز واحد فقط",
+  "ResvMulti": "حجز أكثر من شخص لنفس الموعد",
+  "RecievedResv": "50 موعد",
+
+  "worktimetitle": "حدد مواعيد العمل للموعد",
+  "worktimeDesc": "تكوين إعدادات الأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير وإضافة / إزالة أوقات الراحة لإعداد ساعات العمل",
+  "advSetting": "إعدادات متقدمة",
+  "TraditionalSetting": "إعدادات تقليدية",
+  "Saturday": "السبت",
+  "Sunday": "الأحد",
+  "Monday": "الاثنين",
+  "Tuesday": "الثلاثاء",
+  "Wednesday": "الأربعاء",
+  "Thursday": "الخميس",
+  "Friday": "الجمعة",
+  "startTime": "وقت البدء",
+  "endTime": "وقت الإنتهاء",
+  "chooseTime": "اختر الوقت",
+  "am": "صباحًا",
+  "hours": "الساعة",
+  "Minutes":"الدقائق",
+  "currentTime": "الوقت الحالي",
+  "saveTime": "حفظ الوقت",
+  "resourceAdded":"تم إضافة المورد بنجاح",
+  "resourceData":"بيانات المورد",
+  "schedulefortheDay": "جدول العمل لليوم المخصص"
+
+
+
+}

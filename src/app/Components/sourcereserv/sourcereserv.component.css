@@ -1,0 +1,94 @@
+available
+.dropdown-month{
+  width: 100%;
+  background-color:#ECF1F6 ;
+  /* border: none; */
+  outline: 1px solid	#E7E7E8 ;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.dropdown-icon{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+}
+
+.container-month{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.dropdown{
+  width: 30%;
+  background-color: #e9ecf0;
+  border: none;
+  padding: 0.6rem 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  text-align: center;
+}
+.i-num{
+  border: 1px solid #D9D9D9;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  outline: 1px solid #D9D9D9;
+  width: 70%;
+}
+
+
+.contain-counter {
+  /* background-color: #D9D9D9; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 0.5rem;
+}
+.counterbtn{
+  background-color: #0771DE;
+  color: white;
+  border: none;
+  padding: 3%;
+  border-radius: 0.5rem;
+  flex-grow: 0.5;
+}
+.counter-input{
+  flex-grow: 3;
+  padding: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.rtl
+{
+  text-align: right;
+  float: right;
+}
+
+
+/* reservation */
+.contain-resrv{
+  position: relative;
+}
+.resv{
+  position: relative;
+  border: 1px solid #D9D9D9;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.8rem;
+  outline: 1px solid #D9D9D9;
+  text-align: right;
+}
+.up-arrow{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0.8rem;
+ right: 0.8rem;
+ z-index: 9999;
+ }
+.up-arrow svg{
+  width: 10px;
+  height: 10px;
+}

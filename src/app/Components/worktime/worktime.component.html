@@ -1,0 +1,139 @@
+<div class="card mt-4 p-5">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <button class="btn btn-outline">
+        <button class="btn btn-primary">{{ TraditionalSetting | translate}}</button>
+        <button class="btn btn-outline">{{ advSetting | translate}}</button>
+      </button>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-8">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h3>{{ worktimetitle | translate}}</h3>
+          <p class="txt-lightgrey">{{ worktimeDesc | translate}}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 justify-content-center" *ngFor="let day of weekdays; let i = index">
+    <div class="col-md-3"></div>
+    <div class="col-md-9">
+      <div class="row mt-2">
+        <div class="col-sm-2 mt-5">
+          <div class="row justify-content-center" *ngIf="showTimeSlots[i]">
+            <div class="col-md-4" (click)="getData(i)">
+              <span class="bg-bookmark">
+                <svg class="bookmark" width="20" height="23" viewBox="0 0 20 23" fill="" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8713 22.9358H4.39873C2.44192 22.9358 0.850006 21.3288 0.850006 19.3534V7.21801C0.850006 5.24262 2.44192 3.6356 4.39873 3.6356H12.8713C14.8281 3.6356 16.42 5.24262 16.42 7.21801V19.3534C16.42 21.3288 14.8281 22.9358 12.8713 22.9358ZM4.39873 5.4268C3.42039 5.4268 2.62437 6.23038 2.62437 7.21801V19.3534C2.62437 20.341 3.42039 21.1446 4.39873 21.1446H12.8713C13.8496 21.1446 14.6457 20.341 14.6457 19.3534V7.21801C14.6457 6.23038 13.8496 5.4268 12.8713 5.4268H4.39873ZM19.9688 17.1144V3.59082C19.9688 1.61544 18.3768 0.00842285 16.42 0.00842285H6.57232C6.08229 0.00842285 5.68514 0.409338 5.68514 0.904023C5.68514 1.39871 6.08229 1.79962 6.57232 1.79962H16.42C17.3984 1.79962 18.1944 2.6032 18.1944 3.59082V17.1144C18.1944 17.6091 18.5915 18.01 19.0816 18.01C19.5716 18.01 19.9688 17.6091 19.9688 17.1144Z" fill=""/>
+                </svg>
+              </span>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <span class="bg-icon" (click)="addCalender(i)">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10.625H5C4.65833 10.625 4.375 10.3417 4.375 10C4.375 9.65833 4.65833 9.375 5 9.375H15C15.3417 9.375 15.625 9.65833 15.625 10C15.625 10.3417 15.3417 10.625 15 10.625Z" fill="#92A1AD"/>
+                    <path d="M10 15.625C9.65833 15.625 9.375 15.3417 9.375 15V5C9.375 4.65833 9.65833 4.375 10 4.375C10.3417 4.375 10.625 4.65833 10.625 5V15C10.625 15.3417 10.3417 15.625 10 15.625Z" fill="#92A1AD"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="row mt-1">
+                <span class="bg-icon" (click)="delCalender(i)">
+                  <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10.625H5C4.65833 10.625 4.375 10.3417 4.375 10C4.375 9.65833 4.65833 9.375 5 9.375H15C15.3417 9.375 15.625 9.65833 15.625 10C15.625 10.3417 15.3417 10.625 15 10.625Z" fill="#92A1AD"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="row" *ngIf="showTimeSlots[i]">
+            <!-- end time -->
+            <div class="col-sm-5 mt-4">
+              <div class="row justify-content-center">
+                <p class="txt-lightgrey">{{endTime | translate}}</p>
+                <ul>
+                  <li class="mt-2" *ngFor="let time of day.timeSlots">
+                    <input placeholder="{{chooseTime | translate}}"  class="form-control" type="text" value="{{time.to || am | translate}}">
+                  </li>
+                  <div class="row" *ngIf="showCalender[i]">
+                    <div class="card p-2 mt-2">
+                      <div class="row text-center">
+                        <div class="col-md-6">
+                          <p class="txt-lightgrey">{{hours | translate}}</p>
+                        </div>
+                        <div class="col-md-6">
+                          <i class="fas fa-clock"></i>
+                          <p class="txt-lightgrey">{{Minutes | translate}}</p>
+                        </div>
+                      </div>
+                     <div class="row justify-content-center text-center" *ngFor="let t of Time">
+                        <div class="col-md-6">
+                          <p>{{t.hours}}</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>{{t.minutes}}</p>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center text-center">
+                        <div class="col-md-6">
+                          <button class="btn btn-primary">{{ saveTime | translate}}</button>
+                        </div>
+                        <div class="col-md-6">
+                          <button class="btn btn-primary">{{ currentTime | translate}}</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-1 mt-5">--</div>
+            <!-- start time -->
+            <div class="col-sm-5 mt-4">
+              <div class="row">
+               <p class="txt-lightgrey"> {{startTime | translate}}</p>
+                <ul>
+                  <li class="mt-2" *ngFor="let time of day.timeSlots">
+                    <svg class="clock-intime" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22.7499C6.07 22.7499 1.25 17.9299 1.25 11.9999C1.25 6.06994 6.07 1.24994 12 1.24994C17.93 1.24994 22.75 6.06994 22.75 11.9999C22.75 17.9299 17.93 22.7499 12 22.7499ZM12 2.74994C6.9 2.74994 2.75 6.89994 2.75 11.9999C2.75 17.0999 6.9 21.2499 12 21.2499C17.1 21.2499 21.25 17.0999 21.25 11.9999C21.25 6.89994 17.1 2.74994 12 2.74994Z" fill="#A1A5B7"/>
+                      <path d="M15.71 15.9299C15.58 15.9299 15.45 15.8999 15.33 15.8199L12.23 13.9699C11.46 13.5099 10.89 12.4999 10.89 11.6099V7.50995C10.89 7.09995 11.23 6.75995 11.64 6.75995C12.05 6.75995 12.39 7.09995 12.39 7.50995V11.6099C12.39 11.9699 12.69 12.4999 13 12.6799L16.1 14.5299C16.46 14.7399 16.57 15.1999 16.36 15.5599C16.21 15.7999 15.96 15.9299 15.71 15.9299Z" fill="#E3E4E9"/>
+                    </svg>
+                    <input placeholder="{{chooseTime | translate}}" class="form-control" type="text" value="{{time.from || am | translate }}">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row mt-4" >
+            <div class="col-md-7">
+               <h5>{{ day.name }}</h5>
+            </div>
+            <div class="col-md-4">
+                <span (click)="toggleTimeSlots(i)">
+                <svg *ngIf="!showTimeSlots[i]" class="toggle" width="60" height="31" viewBox="0 0 60 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.575012" y="0.0200195" width="58.4883" height="30.9021" rx="15.4511" fill="#8F9BBA"/>
+                  <circle cx="44.3668" cy="17.5" r="11.625" fill="white"/>
+                </svg>
+                <svg *ngIf="showTimeSlots[i]" class="toggle" width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="58.4883" height="30.9021" rx="15.4511" transform="matrix(-1 0 0 1 59.0633 0.36731)" fill="#0771DE"/>
+                  <circle cx="11.625" cy="11.625" r="11.625" transform="matrix(-1 0 0 1 29.3832 5.87494)" fill="white"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

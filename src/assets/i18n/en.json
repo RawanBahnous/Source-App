@@ -1,0 +1,51 @@
+{
+  "title": "Add New Sources",
+  "btnremove": "Delete Source ",
+  "btnsave": "Save Changes",
+  "btn": "Activated",
+  "notbtn": "Not Activated",
+
+  "sourcecardtitle": "Resource name",
+  "sourceplaceholder": "Enter Resource Name",
+  "sourcevalue": "Haitham Mohammed",
+
+  "sourcetypetitle": "Choose the resource type",
+  "sourcetypeone": "Book within a day",
+  "sourcetypetwo": "Booking period (more than one day).",
+
+  "availabletitle": "The resource is available to",
+  "availablemonth": "Month",
+  "Resourcetitle": "Resource time",
+  "Resourcetime": "Service time",
+  "ResourceConstTime": "Time constant",
+  "Time" : "30 minutes",
+  "ResvTitle": "Multiple booking",
+  "ResevOne": "Only one reservation",
+  "ResvMulti": "Booking more than one person for the same time",
+  "RecievedResv": "50 Resev",
+
+
+  "worktimetitle": "Select business hours for the appointment",
+  "worktimeDesc": "Configure your week settings here. Simply move the sliders and add/remove break times to set up work hours",
+  "advSetting": "Advanced Settings",
+  "TraditionalSetting": "Traditional settings",
+  "Saturday": "Saturday",
+  "Sunday": "Sunday",
+  "Monday": "Monday",
+  "Tuesday": "Tuesday",
+  "Wednesday": "Wednesday",
+  "Thursday": "Thursday",
+  "Friday": "Friday",
+  "startTime": "Start time",
+  "endTime": "End time",
+  "chooseTime": "Choose the time",
+  "am": "A.M",
+  "hours": "Hour",
+  "Minutes":"Minutes",
+  "currentTime": "currentTime",
+  "saveTime": "saveTime",
+  "resourceAdded":"resource Added succefully",
+  "resourceData":"resource Data",
+  "schedulefortheDay": "Schedule for the Day"
+
+}

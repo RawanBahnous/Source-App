@@ -1,0 +1,9 @@
+/* .card{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.2rem;
+  justify-content: start;
+}
+.card > *{
+  margin-top: 0.5rem;
+} */

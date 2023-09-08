@@ -1,0 +1,22 @@
+<div class="loader" *ngIf="showloader">
+  <img src="assets/images/logo.png" alt="loader">
+</div>
+
+
+<div class="row  bg-grey p-5" >
+  <div class="row">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="resource-info mt-4">
+    <div class="col-lg-6">
+      <app-sourcereserv></app-sourcereserv>
+    </div>
+    <div class="contain-nametype m-lg-3">
+      <app-sourcename></app-sourcename>
+      <app-sourcetype></app-sourcetype>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <app-worktime></app-worktime>
+  </div>
+</div>

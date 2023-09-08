@@ -1,0 +1,100 @@
+
+<nav>
+  <ul>
+    <li >
+      <button class="btn-remove">{{btnremove | translate}}
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 6.72998C20.98 6.72998 20.95 6.72998 20.92 6.72998C15.63 6.19998 10.35 5.99998 5.11998 6.52998L3.07998 6.72998C2.65998 6.76998 2.28998 6.46998 2.24998 6.04998C2.20998 5.62998 2.50998 5.26998 2.91998 5.22998L4.95998 5.02998C10.28 4.48998 15.67 4.69998 21.07 5.22998C21.48 5.26998 21.78 5.63998 21.74 6.04998C21.71 6.43998 21.38 6.72998 21 6.72998Z" fill="#FF4B55"/>
+          <path d="M8.50001 5.72C8.46001 5.72 8.42001 5.72 8.37001 5.71C7.97001 5.64 7.69001 5.25 7.76001 4.85L7.98001 3.54C8.14001 2.58 8.36001 1.25 10.69 1.25H13.31C15.65 1.25 15.87 2.63 16.02 3.55L16.24 4.85C16.31 5.26 16.03 5.65 15.63 5.71C15.22 5.78 14.83 5.5 14.77 5.1L14.55 3.8C14.41 2.93 14.38 2.76 13.32 2.76H10.7C9.64001 2.76 9.62001 2.9 9.47001 3.79L9.24001 5.09C9.18001 5.46 8.86001 5.72 8.50001 5.72Z" fill="#FF4B55"/>
+          <path d="M15.21 22.75H8.79002C5.30002 22.75 5.16002 20.82 5.05002 19.26L4.40002 9.19001C4.37002 8.78001 4.69002 8.42001 5.10002 8.39001C5.52002 8.37001 5.87002 8.68001 5.90002 9.09001L6.55002 19.16C6.66002 20.68 6.70002 21.25 8.79002 21.25H15.21C17.31 21.25 17.35 20.68 17.45 19.16L18.1 9.09001C18.13 8.68001 18.49 8.37001 18.9 8.39001C19.31 8.42001 19.63 8.77001 19.6 9.19001L18.95 19.26C18.84 20.82 18.7 22.75 15.21 22.75Z" fill="#FF4B55"/>
+          <path d="M13.66 17.25H10.33C9.92002 17.25 9.58002 16.91 9.58002 16.5C9.58002 16.09 9.92002 15.75 10.33 15.75H13.66C14.07 15.75 14.41 16.09 14.41 16.5C14.41 16.91 14.07 17.25 13.66 17.25Z" fill="#FF4B55"/>
+          <path d="M14.5 13.25H9.5C9.09 13.25 8.75 12.91 8.75 12.5C8.75 12.09 9.09 11.75 9.5 11.75H14.5C14.91 11.75 15.25 12.09 15.25 12.5C15.25 12.91 14.91 13.25 14.5 13.25Z" fill="#FF4B55"/>
+        </svg>
+      </button>
+    </li>
+    <li class="m-save">
+      <button class="savebtn" (click)="save()" >{{btnsave | translate}}</button>
+    </li>
+    <li class="m-toggle">
+      <!-- <li> -->
+      <div class="row justify-content-center">
+      <div class="col-sm-6 mt-2" *ngIf="!changing"  (click)="changeLang()">
+        {{active | translate}}
+        <svg class="toggle" width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <rect width="58.4883" height="30.9021" rx="15.4511" transform="matrix(-1 0 0 1 59.0633 0.36731)" fill="#0771DE"/>
+         <circle cx="11.625" cy="11.625" r="11.625" transform="matrix(-1 0 0 1 29.3832 5.87494)" fill="white"/>
+         </svg>
+       </div>
+       <div class="col-sm-6 mt-2" *ngIf="changing" (click)="changeLang()">
+        {{notactive | translate}}
+        <svg class="toggle" width="60" height="31" viewBox="0 0 60 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <rect x="0.575012" y="0.0200195" width="58.4883" height="30.9021" rx="15.4511" fill="#8F9BBA"/>
+         <circle cx="44.3668" cy="17.5" r="11.625" fill="white"/>
+         </svg>
+       </div>
+      </div>
+    </li>
+    <li style="float: right;"><span class="right-arrow">
+      <svg class="arrow" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.8287 18.0358C13.6466 18.0358 13.4646 17.9687 13.3208 17.825C13.0429 17.5471 13.0429 17.0871 13.3208 16.8092L18.63 11.5L13.3208 6.19082C13.0429 5.91291 13.0429 5.45291 13.3208 5.17499C13.5987 4.89707 14.0587 4.89707 14.3366 5.17499L20.1537 10.9921C20.4316 11.27 20.4316 11.73 20.1537 12.0079L14.3366 17.825C14.1929 17.9687 14.0108 18.0358 13.8287 18.0358Z" fill="#292D32"/>
+        <path d="M19.4829 12.2188H3.35419C2.96127 12.2188 2.63544 11.8929 2.63544 11.5C2.63544 11.1071 2.96127 10.7812 3.35419 10.7812H19.4829C19.8759 10.7812 20.2017 11.1071 20.2017 11.5C20.2017 11.8929 19.8759 12.2188 19.4829 12.2188Z" fill="#292D32"/>
+      </svg>
+    </span></li>
+    <li style="float:right" class="title-arrow">
+        <h3>{{ title | translate}}
+        </h3>
+    </li>
+
+  </ul>
+</nav>
+
+<!-- pop up to display added Resource data -->
+<div class="data-Popup" *ngIf="showdata">
+  <div class="row justify-content-center">
+    <div class="col-12 bg-coloring">
+      <div class="row bg-popup justify-content-center" *ngFor="let source of addedResource">
+       <div class="col-12 p-3">
+        <div class="row mt-3 mb-3">
+          <h2>{{addsentence | translate}}</h2>
+        </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h3>{{resourceData | translate}}:</h3>
+          <p>Source Name: {{ source.srcName }}</p>
+          <p>Source Type: {{ source.srcType }}</p>
+          <p>Source Availability Day/month: {{ source.availablity.day}} / {{ source.availablity.month}}</p>
+          <p>Source Availability Day: {{ source.availablity.Resev}} </p>
+          <p>Source for many people: {{ source.availablity.manyper}} </p>
+          <p>Source Reservation count: {{ source.availablity.resvCount}} </p>
+          <p>Source Availability Day: {{ source.availablity.resvTime}} </p>
+          <p>work time Day: {{ source.workTime.name}} </p>
+        </div>
+      <div class="col-md-6">
+      <div class="row justify-content-center">
+          <h5>{{schedulefortheDay | translate}}</h5>
+      </div>
+      <div class="row justify-content-center">
+        <li *ngFor="let timeSlot of source.workTime.timeSlots">
+          {{ timeSlot.from }} - {{ timeSlot.to }}
+        </li>
+      </div>
+
+          </div>
+          </div>
+
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="data-Popup" *ngIf="canotAddError">
+  <div class="row justify-content-center">
+    <div class="col-12 bg-coloring">
+      <div class="row bg-popup justify-content-center">
+        <p>You MUST fill all Your Data fields to add the Resource Re fill data please</p>
+        <button (click)="close()" class="close">X</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+
+body{
+  overflow-x: hidden;
+  text-transform: capitalize;
+}
+.bg-grey{
+  background-color: #e0e1e3;
+  min-height: 90vh;
+}
+.toggle{
+  width:60px;
+  height:32px;
+  cursor: pointer;
+}
+.txt-lightgrey{
+  color: rgb(155, 150, 150);
+}
+.c-pointer{
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.01);
+}
+svg{
+  width:21px;
+  height:19px;
+}
+input[type=radio]{
+  width:21px;
+  height:19px;
+  cursor: pointer;
+}
+.ml-2{
+  margin-left: 3rem;
+}
+

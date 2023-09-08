@@ -1,0 +1,124 @@
+.btn-remove{
+  background-color: rgb(255, 255, 255);
+  color: #FF4B55;
+  border: 1px solid #FF4B55;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn-remove:hover{
+  background: linear-gradient(45deg, #2a2cb4, #99060d);
+  color: #ffffff;
+}
+.savebtn{
+  background-color: #1C1C28;
+  color: #fdfcfc;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.savebtn:hover{
+  background: linear-gradient(45deg, #2a2cb4, #99060d);
+  outline: 1px solid #FF4B55;
+}
+.right-arrow {
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  border-radius: 30%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px) saturate(85%);
+  -webkit-backdrop-filter: blur(3px) saturate(85%);
+  background-color: #E7EAED;
+  transition: background-color 0.3s ease-in-out;
+}
+.right-arrow:hover {
+  background-color: rgba(4, 41, 209, 0.8);
+  cursor: pointer;
+}
+.arrow:hover svg{
+fill: aliceblue;
+}
+.data-Popup
+{
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bg-coloring{
+  background: linear-gradient(45deg, #5153d2, #c43a41);
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.bg-popup{
+  background-color: rgba(249, 246, 246, 0.2);
+  min-width: 700px;
+  min-height: 300px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.close{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.title-arrow{
+  margin-top: 1rem;
+text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li {
+  display: block;
+  padding: 14px 16px;
+}
+.m-toggle{
+  width: 20%;
+}
+.m-save{
+  width: 15%;
+}
+@media (max-width: 780px) {
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-remove, .savebtn {
+    margin: 10px auto;
+  }
+  .title-arrow {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .right-arrow{
+    display: none;
+  }
+}

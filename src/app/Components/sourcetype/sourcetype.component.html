@@ -1,0 +1,25 @@
+<div class="row justify-content-center mt-sm-2">
+    <div class="col-md-12">
+      <div class="card p-4">
+       <div class="row justify-content-between">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 txt-lightgrey">
+          <p>
+            {{sourcetypetwo | translate}}
+            <input type="radio" class="form-check-input" [value]="sourcetypetwo | translate" name="srctype" [(ngModel)]="srctype" (blur)="getData()" id="">
+          </p>
+        </div>
+        <div class="col-md-3 txt-lightgrey">
+          <p>
+          {{sourcetypeone | translate}}
+
+            <input type="radio" class="form-check-input" [value]="sourcetypeone | translate" name="srctype" [(ngModel)]="srctype" (blur)="getData()" id="">
+          </p>
+        </div>
+        <div class="col-md-3 txt-lightgrey">
+          <p>{{sourcetypetitle | translate}}</p>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>

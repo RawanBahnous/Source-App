@@ -1,0 +1,57 @@
+ul li{
+  list-style-type: none;
+  position: relative;
+}
+
+li input{
+  position: relative;
+  text-align: right;
+}
+
+.clock-intime{
+  position: absolute;
+}
+
+.bg-icon{
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.icon{
+  position: absolute;
+  top: 0.5rem;
+  left: 0.4rem;
+  cursor: pointer;
+}
+.bg-bookmark{
+  background-color: rgb(207, 207, 248);
+  background-color: aliceblue;
+  border-radius: 20%;
+  padding: 0.2rem;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 0.4rem;
+}
+.bookmark{
+  cursor: pointer;
+}
+.bg-bookmark svg{
+  cursor: pointer;
+  fill: lightslategrey;
+}
+.bg-bookmark:hover{
+  background-color: rgb(186, 210, 237);
+}
+.bg-bookmark svg:hover{
+  fill: #0771DE;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
