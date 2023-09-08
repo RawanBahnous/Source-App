@@ -6,8 +6,6 @@ Angular page responsible for adding new resources, utilizing state management wi
   
 - Task Presentation : https://drive.google.com/drive/folders/1597e4xOSWeLIU5ix4wzTGwbCXTe34C2z?usp=drive_link
 
-- Task Demo : 
-
 ## Features: 
 
 - Translation ability and applying RTL and LTR 
